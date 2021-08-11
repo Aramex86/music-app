@@ -33,30 +33,30 @@ export const SideMenu = () => {
         <StyledList>
           <StyledTypography>YOUR LIBRARY</StyledTypography>
           <StyledItem>
-            <StyledLink to="/home">recent played</StyledLink>
+            <StyledLink to="/recent">recent played</StyledLink>
           </StyledItem>
           <StyledItem>
-            <StyledLink to="/browse">favorite songs</StyledLink>
+            <StyledLink to="/favorite">favorite songs</StyledLink>
           </StyledItem>
           <StyledItem>
-            <StyledLink to="/radio">Artists</StyledLink>
+            <StyledLink to="/Artists">Artists</StyledLink>
           </StyledItem>
           <StyledItem>
-            <StyledLink to="/radio">albums</StyledLink>
+            <StyledLink to="/albums">albums</StyledLink>
           </StyledItem>
         </StyledList>
 
         <StyledList>
           <StyledTypography>PLAYLISTS</StyledTypography>
           <StyledItem>
-            <StyledLink to="/home">hindi top 50</StyledLink>
+            <StyledLink to="/albums">hindi top 50</StyledLink>
           </StyledItem>
           <StyledItem>
             {" "}
-            <StyledLink to="/browse">pop 50</StyledLink>
+            <StyledLink to="/pop">pop 50</StyledLink>
           </StyledItem>
           <StyledItem>
-            <StyledLink to="/radio">romance season</StyledLink>
+            <StyledLink to="/romance">romance season</StyledLink>
           </StyledItem>
         </StyledList>
       </Box>
