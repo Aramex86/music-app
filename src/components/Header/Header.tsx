@@ -1,9 +1,16 @@
 import { Box } from "components/Box/Box";
 import { Logo } from "components/Logo/Logo";
+import { SearchBox } from "components/SearchBox/SearchBox";
 import { Colors } from "helpers/enums";
+import React from "react";
 import { StyledHeader } from "./Header.style";
+import { AiOutlineSearch } from "react-icons/ai";
 
 export const Header = () => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    console.log(e.target.value);
+  };
+
   return (
     <StyledHeader>
       <Box
@@ -20,7 +27,13 @@ export const Header = () => {
             MUSICLY
           </Logo>
         </Box>
-        <Box>Search</Box>
+        <Box width="60%">
+          <SearchBox
+            onChange={handleChange}
+            placeholder="Search for songs..."
+            prefix={<AiOutlineSearch fill={Colors.White} size={16} />}
+          />
+        </Box>
         <Box>User</Box>
       </Box>
     </StyledHeader>
