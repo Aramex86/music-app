@@ -2,7 +2,7 @@ import { Box } from "components/Box/Box";
 import { StyledTypography } from "components/Typography/Typography.style";
 import { Colors } from "helpers/enums";
 import { Browse, Home, Radio } from "pages";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Router } from "react-router-dom";
 import { StyledItem, StyledLink, StyledList } from "./SideMenu.style";
 
 export const SideMenu = () => {
@@ -60,6 +60,7 @@ export const SideMenu = () => {
           </StyledItem>
         </StyledList>
       </Box>
+
       <Switch>
         <Route path="/browse" component={Browse} />
         <Route path="/radio" component={Radio} />

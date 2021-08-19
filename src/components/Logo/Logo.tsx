@@ -7,6 +7,5 @@ interface WithProps extends LogoType {
 }
 
 export const Logo = ({ children, ...rest }: WithProps) => {
-  console.log(rest);
   return <StyledLogo styles={rest}>{children}</StyledLogo>;
 };

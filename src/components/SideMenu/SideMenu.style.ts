@@ -1,11 +1,10 @@
-import { Typography } from "antd";
 import { Colors } from "helpers/enums";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const StyledLink = styled(NavLink)`
   color: ${Colors.White};
-  width: 40%;
+  width: 100%;
   text-transform: uppercase;
   cursor: pointer;
 `;
