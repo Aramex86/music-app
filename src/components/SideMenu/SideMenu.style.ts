@@ -15,6 +15,7 @@ export const StyledItem = styled.li`
   text-align: center;
   position: relative;
   cursor: pointer;
+  position: relative;
   &::before {
     content: "";
     position: absolute;
@@ -28,6 +29,8 @@ export const StyledItem = styled.li`
   &:hover {
     & a {
       color: ${Colors.MountainMeadow};
+      z-index:2;
+      position: relative;
     }
     &::before {
       width: 50%;
@@ -36,6 +39,7 @@ export const StyledItem = styled.li`
         #1dc156 -41%,
         transparent 100%
       );
+      z-index: 1;
     }
   }
 `;
